@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "BlurAway",
+  "version": "1.0",
+  "description": "Hide or blur profile pictures on LinkedIn for distraction-free browsing.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
