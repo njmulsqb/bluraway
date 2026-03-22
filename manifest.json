@@ -4,6 +4,10 @@
   "version": "1.0",
   "description": "Hide or blur profile pictures on LinkedIn for distraction-free browsing.",
   "permissions": ["scripting"],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "content_scripts": [
     {
       "matches": ["*://*.linkedin.com/*"],
